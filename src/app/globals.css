@@ -1,19 +1,14 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  scroll-behavior: smooth;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -24,19 +19,119 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+a {
+  color: var(--color-links);
+  text-decoration: none !important;
+  cursor: pointer;
 }
 
-a {
-  color: inherit;
+a:hover {
+  color: var(--color-links-hover);
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-primary);
+}
+
+#main {
+  margin-top: 90px;
+}
+
+/*--------------------------------------------------------------
+# Sections & Section Header
+--------------------------------------------------------------*/
+section {
+  padding: 40px 0;
+  overflow: hidden;
+  scroll-margin-top: 70px;
+}
+
+.section-header {
+  border-bottom: 2px solid var(--color-black);
+}
+
+.section-header h2 {
+  font-size: 50px;
+  color: var(--color-black);
+}
+
+.section-header p {
+  margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# Page title
+--------------------------------------------------------------*/
+.page-title {
+  font-size: 70px;
+  color: var(--color-black);
+}
+
+/* Form Input Fieldds */
+.form-control:active,
+.form-control:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: var(--color-black);
+}
+
+/* Botton */
+.btn:active,
+.btn:focus {
+  outline: none;
+}
+
+.btn.btn-primary {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  border-color: var(--color-black);
+}
+
+/*--------------------------------------------------------------
+# Not Found Page
+--------------------------------------------------------------*/
+
+.not-found {
+  padding: 0;
+  background: url('/public/assets/img/Logo0.jpg');
+  background-position: center;
+  background-size: cover;
+}
+.cover-background {
+  position: relative !important;
+  background-size: cover !important;
+  overflow: hidden !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+.p-0 {
+  padding: 0 !important;
+}
+
+.error-page {
+  background-color: #bababa4a;
+  -webkit-backdrop-filter: blur(9px);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(234, 234, 235, 0.2);
+  padding: 80px 20px;
+}
+.text-center {
+  text-align: center !important;
+}
+.error-page h1 {
+  font-size: 200px;
+  line-height: 1;
+  font-weight: 600;
+}
+.text-secondary {
+  color: #15395a !important;
+}
+.mb-4 {
+  margin-bottom: 1.5rem !important;
 }
