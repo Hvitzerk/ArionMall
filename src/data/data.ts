@@ -51,7 +51,7 @@ export const scis = [
   {
     id: 3,
     icon: 'bi-instagram',
-    link: '',
+    link: 'https://www.instagram.com/arionmall/?hl=en',
   },
 ];
 
