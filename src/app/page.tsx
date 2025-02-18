@@ -6,7 +6,6 @@ export default function Home() {
     <main id="main">
       <Hero />
       <Posts  />  
-
     </main>
   );
 }

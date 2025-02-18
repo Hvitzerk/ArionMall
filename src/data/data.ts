@@ -1,38 +1,38 @@
 export const navs = [
   {
     id: 1,
-    name: 'Home',
-    link: '/',
+    name: "Home",
+    link: "/",
     active: true,
   },
   {
     id: 2,
-    name: 'Posts',
-    link: '/postitems',
+    name: "Posts",
+    link: "/postitems",
     active: false,
   },
   {
     id: 3,
-    name: 'Tenant Directory',
-    link: '/TenantDirectorylist',
+    name: "Tenant Directory",
+    link: "/TenantDirectorylist",
     active: false,
   },
   {
     id: 4,
-    name: 'About',
-    link: '/about',
+    name: "About",
+    link: "/about",
     active: false,
   },
   {
     id: 5,
-    name: 'Contact',
-    link: '/contact',
+    name: "Contact",
+    link: "/contact",
     active: false,
   },
   {
     id: 6,
-    name: 'Create Post',
-    link: '/createpostitems',
+    name: "Create Post",
+    link: "/createpostitems",
     active: false,
   },
 ];
@@ -40,37 +40,36 @@ export const navs = [
 export const scis = [
   {
     id: 1,
-    icon: 'bi-facebook',
-    link: '',
+    icon: "bi-facebook",
+    link: "",
   },
   {
     id: 2,
-    icon: 'bi-twitter-x',
-    link: '',
+    icon: "bi-twitter-x",
+    link: "",
   },
   {
     id: 3,
-    icon: 'bi-instagram',
-    link: 'https://www.instagram.com/arionmall/?hl=en',
+    icon: "bi-instagram",
+    link: "https://www.instagram.com/arionmall/?hl=en",
   },
 ];
 
 export const heroSlides = [
   {
     id: 1,
-    bgImg: 'assets/img/post-slide-1.jpg',
-    title: 'The Best Homemade Masks for Face (keep the Pimples Away)',
-    brief: `Lorem ipsum dolor sit amet, consectetur adipisicing
-    elit. Quidem neque est mollitia! Beatae minima assumenda
-    repellat harum vero, officiis ipsam magnam obcaecati
-    cumque maxime inventore repudiandae quidem
-    necessitatibus rem atque.`,
+    bgImg: "assets/img/Arion-Mall.jpg",
+    title: "The Best One Stop Shopping Centre in East Jakarta",
+    brief: `Arion  Mall merupakan   shopping  center  terlengkap  
+    dan terbaik dikawasan  Jakarta  Timur  sebagai Mall  Favorit  masyarakat,   
+    dengan   didukung manajemen    yang  menggunakan  tenaga  yang  profesional  
+    sehinggga   customer   akan lebih aman, nyaman   dalam   melakukan  aktivitas  dengan  keluarga`,
   },
   {
     id: 2,
-    bgImg: 'assets/img/post-slide-2.jpg',
+    bgImg: "assets/img/Daily-Foodhall.jpg",
     title:
-      '17 Pictures of Medium Length Hair in Layers That Will Inspire Your New Haircut',
+      "17 Pictures of Medium Length Hair in Layers That Will Inspire Your New Haircut",
     brief: `Lorem ipsum dolor sit amet, consectetur adipisicing
     elit. Quidem neque est mollitia! Beatae minima assumenda
     repellat harum vero, officiis ipsam magnam obcaecati
@@ -79,8 +78,8 @@ export const heroSlides = [
   },
   {
     id: 3,
-    bgImg: 'assets/img/post-slide-3.jpg',
-    title: '9 Half-up/half-down Hairstyles for Long and Medium Hair',
+    bgImg: "assets/img/Funworld.jpg",
+    title: "9 Half-up/half-down Hairstyles for Long and Medium Hair",
     brief: `Lorem ipsum dolor sit amet, consectetur adipisicing
     elit. Quidem neque est mollitia! Beatae minima assumenda
     repellat harum vero, officiis ipsam magnam obcaecati
@@ -89,8 +88,58 @@ export const heroSlides = [
   },
   {
     id: 4,
-    bgImg: 'assets/img/post-slide-4.jpg',
-    title: '13 Amazing Poems from Shel Silverstein with Valuable Life Lessons',
+    bgImg: "assets/img/Kidzilla.jpg",
+    title: "13 Amazing Poems from Shel Silverstein with Valuable Life Lessons",
+    brief: `Lorem ipsum dolor sit amet, consectetur adipisicing
+    elit. Quidem neque est mollitia! Beatae minima assumenda
+    repellat harum vero, officiis ipsam magnam obcaecati
+    cumque maxime inventore repudiandae quidem
+    necessitatibus rem atque.`,
+  },
+  {
+    id: 5,
+    bgImg: "assets/img/Solaria.jpg",
+    title: "13 Amazing Poems from Shel Silverstein with Valuable Life Lessons",
+    brief: `Lorem ipsum dolor sit amet, consectetur adipisicing
+    elit. Quidem neque est mollitia! Beatae minima assumenda
+    repellat harum vero, officiis ipsam magnam obcaecati
+    cumque maxime inventore repudiandae quidem
+    necessitatibus rem atque.`,
+  },
+  {
+    id: 6,
+    bgImg: "assets/img/Shigeru.jpg",
+    title: "13 Amazing Poems from Shel Silverstein with Valuable Life Lessons",
+    brief: `Lorem ipsum dolor sit amet, consectetur adipisicing
+    elit. Quidem neque est mollitia! Beatae minima assumenda
+    repellat harum vero, officiis ipsam magnam obcaecati
+    cumque maxime inventore repudiandae quidem
+    necessitatibus rem atque.`,
+  },
+  {
+    id: 7,
+    bgImg: "assets/img/Bakmi-Naga.jpg",
+    title: "13 Amazing Poems from Shel Silverstein with Valuable Life Lessons",
+    brief: `Lorem ipsum dolor sit amet, consectetur adipisicing
+    elit. Quidem neque est mollitia! Beatae minima assumenda
+    repellat harum vero, officiis ipsam magnam obcaecati
+    cumque maxime inventore repudiandae quidem
+    necessitatibus rem atque.`,
+  },
+  {
+    id: 8,
+    bgImg: "assets/img/Mixue.jpg",
+    title: "13 Amazing Poems from Shel Silverstein with Valuable Life Lessons",
+    brief: `Lorem ipsum dolor sit amet, consectetur adipisicing
+    elit. Quidem neque est mollitia! Beatae minima assumenda
+    repellat harum vero, officiis ipsam magnam obcaecati
+    cumque maxime inventore repudiandae quidem
+    necessitatibus rem atque.`,
+  },
+  {
+    id: 9,
+    bgImg: "assets/img/Shopaholic.jpg",
+    title: "13 Amazing Poems from Shel Silverstein with Valuable Life Lessons",
     brief: `Lorem ipsum dolor sit amet, consectetur adipisicing
     elit. Quidem neque est mollitia! Beatae minima assumenda
     repellat harum vero, officiis ipsam magnam obcaecati
@@ -103,9 +152,9 @@ export const contact = [
   {
     id: 1,
     details: {
-      name: 'Example Name',
-      email: 'info@example.com',
-      subject: 'Message',
+      name: "Example Name",
+      email: "info@example.com",
+      subject: "Message",
       message: `Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
     velit esse cillum dolore eu fugiat nulla pariatur`,
     },
