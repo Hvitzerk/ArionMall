@@ -6,15 +6,13 @@ import Link from 'next/link';
 import styles from './edit.module.css';
 import { usePostItem } from '@/hooks/usePostItems';
 
-interface EditPostItemProps {
-  params: {
-    id: string;
-  };
-}
+type Params = {
+  id: string;
+};
 
-export default function EditPostItem({ params: { id } }: EditPostItemProps) {
+export default function EditPostItem({ params }: { params: Params }) {
   const router = useRouter();
-  const { postItem, isLoading, isError, mutate } = usePostItem(id);
+  const { postItem, isLoading, isError, mutate } = usePostItem(params.id);
   
   const [formData, setFormData] = useState({
     title: '',
@@ -216,7 +214,7 @@ export default function EditPostItem({ params: { id } }: EditPostItemProps) {
     }
     
     try {
-      const res = await fetch(`/api/postitems/${id}`, {
+      const res = await fetch(`/api/postitems/${params.id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
