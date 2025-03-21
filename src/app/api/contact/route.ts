@@ -15,13 +15,21 @@ export async function POST(request: Request) {
       );
     }
 
-    // Konfigurasi transporter email
+    console.log("Email credentials:", { 
+      user: process.env.EMAIL_USER,
+      pass: process.env.EMAIL_PASS ? "exists" : "missing"
+    });
+
+    // Konfigurasi transporter email yang lebih reliable
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: process.env.EMAIL_USER || 'noreply@arionmall.com', // Gunakan env variable di production
-        pass: process.env.EMAIL_PASS || 'your_app_password', // Gunakan env variable di production
+        user: process.env.EMAIL_USER || 'sfardan321@gmail.com',
+        pass: process.env.EMAIL_PASS || 'zpnq kdaw melb swrq',
       },
+      tls: {
+        rejectUnauthorized: false
+      }
     });
 
     // Template email yang akan dikirim
