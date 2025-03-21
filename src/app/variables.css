@@ -3,9 +3,10 @@
 --------------------------------------------------------------*/
 :root {
   /* Fonts */
-  --font-default: 'EB Garamond', system-ui, -apple-system, 'Segoe UI', Roboto,
-    'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif,
-    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --font-default:
+    'EB Garamond', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', 'Liberation Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Noto Color Emoji';
   --font-primary: 'EB Garamond', serif; /*'Playfair Display', serif;*/
   --font-secondary: 'Inter', sans-serif;
 
@@ -126,13 +127,9 @@
   --bs-body-color-rgb: var(--color-default-rgb);
   --bs-body-bg-rgb: 255, 255, 255;
   --bs-font-sans-serif: var(--font-default);
-  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
-    'Liberation Mono', 'Courier New', monospace;
-  --bs-gradient: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.15),
-    rgba(255, 255, 255, 0)
-  );
+  --bs-font-monospace:
+    SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--font-default);
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;

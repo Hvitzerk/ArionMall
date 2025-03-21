@@ -47,7 +47,7 @@ h6 {
 # Sections & Section Header
 --------------------------------------------------------------*/
 section {
-  padding: 40px 0;
+  padding: 20px 0;
   overflow: hidden;
   scroll-margin-top: 70px;
 }
@@ -134,4 +134,19 @@ section {
 }
 .mb-4 {
   margin-bottom: 1.5rem !important;
+}
+
+/* Hero Section Spacing */
+.hero-slider {
+  margin-bottom: 20px;
+}
+
+.hero-slider + section {
+  padding-top: 20px;
+}
+
+/* Post Grid Section */
+.post-grid-section {
+  padding-top: 20px;
+  margin-top: 0;
 }

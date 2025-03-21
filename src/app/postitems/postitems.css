@@ -1,0 +1,133 @@
+.post-items-container {
+  padding: 80px 0;
+}
+
+.post-items-container h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: var(--color-default);
+  margin-bottom: 0;
+}
+
+.post-items-container .form-select {
+  min-width: 150px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.post-items-container .form-select:hover {
+  border-color: #666;
+}
+
+.post-items-container .form-select:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  border-color: #80bdff;
+  outline: none;
+}
+
+.post-items-container .row {
+  margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+  .post-items-container {
+    padding: 40px 0;
+  }
+  
+  .post-items-container h2 {
+    font-size: 24px;
+  }
+}
+
+.posts {
+  padding-bottom: 80px;
+}
+
+/* Animasi untuk post items */
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.animate-post {
+  animation: fadeInScale 0.5s ease-out forwards;
+  opacity: 0;
+}
+
+/* Menambahkan delay untuk setiap post */
+.row > div:nth-child(1) .animate-post { animation-delay: 0.1s; }
+.row > div:nth-child(2) .animate-post { animation-delay: 0.2s; }
+.row > div:nth-child(3) .animate-post { animation-delay: 0.3s; }
+.row > div:nth-child(4) .animate-post { animation-delay: 0.4s; }
+.row > div:nth-child(5) .animate-post { animation-delay: 0.5s; }
+.row > div:nth-child(6) .animate-post { animation-delay: 0.6s; }
+
+/* Hover effect */
+.post-entry-1 {
+  transition: transform 0.3s ease;
+}
+
+.post-entry-1:hover {
+  transform: translateY(-5px);
+}
+
+.posts .form-select {
+  min-width: 150px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.posts .form-select:hover {
+  border-color: #666;
+}
+
+.posts .form-select:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  border-color: #80bdff;
+  outline: none;
+}
+
+.posts .row {
+  margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+  .posts .form-select {
+    margin-top: 15px;
+  }
+  
+  /* Mempercepat animasi di mobile */
+  .animate-post {
+    animation-duration: 0.3s;
+  }
+}
+
+/* Memastikan tinggi card sama */
+.row-equal-height {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row-equal-height > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+
+.row-equal-height .post-entry-1 {
+  width: 100%;
+} 

@@ -1,65 +1,72 @@
-"use client";
+'use client';
 
-import React, { useEffect } from "react";
-import { heroSlides } from "@/data/data";
-import "./hero.css";
+import React, { useEffect } from 'react';
+import { heroSlides } from '@/data/data';
+import './hero.css';
 
-// import AOS
-import AOS from "aos";
+// Import AOS
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 // Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide } from 'swiper/react';
+
 // Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
 // Import required Swiper modules
-import { Autoplay, Pagination, Navigation } from "swiper/modules";
-import HeroSlide from "@/app/components/HeroSlide";
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import HeroSlide from '@/app/components/HeroSlide';
 
 export default function Hero() {
   useEffect(() => {
     AOS.init({
       duration: 1000,
-      easing: "ease-in-out",
+      easing: 'ease-in-out',
       once: true,
       mirror: false,
     });
   }, []);
+
   return (
-    <section id="hero-slider" className="hero-slider">
-      <div className="container-md" data-aos="fade-in">
+    <section className="hero-slider">
+      <div className="container">
         <div className="row">
           <div className="col-12">
             <Swiper
-              slidesPerView={"auto"}
-              speed={500}
+              slidesPerView={1}
+              speed={1000}
+              effect={'fade'}
+              fadeEffect={{
+                crossFade: true
+              }}
               autoplay={{
-                delay: 3000,
+                delay: 5000,
                 disableOnInteraction: false,
               }}
               pagination={{
-                el: ".swiper-pagination",
-                type: "bullets",
+                el: '.swiper-pagination',
+                type: 'bullets',
                 clickable: true,
               }}
               navigation={{
-                nextEl: ".custom-swiper-button-next",
-                prevEl: ".custom-swiper-button-prev",
+                nextEl: '.custom-swiper-button-next',
+                prevEl: '.custom-swiper-button-prev',
               }}
               modules={[Autoplay, Pagination, Navigation]}
               loop={true}
               className="slideFeaturedPosts"
             >
-              {heroSlides.map((slide) => (
-                // eslint-disable-next-line react/jsx-key
-                <SwiperSlide>
-                  {/* include customized hero slide template */}
+              {heroSlides.map((slide, index) => (
+                <SwiperSlide key={slide.id || index}>
+                  {/* Include customized hero slide template */}
                   <HeroSlide slide={slide} />
                 </SwiperSlide>
               ))}
 
+              {/* Custom Navigation Buttons */}
               <div className="custom-swiper-button-next">
                 <span className="bi-chevron-right"></span>
               </div>

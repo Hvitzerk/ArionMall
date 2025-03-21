@@ -1,0 +1,52 @@
+@media (max-width: 768px) {
+  .custom border {
+    border: none !important;
+  }
+}
+
+.posts {
+  padding-bottom: 80px;
+}
+
+.posts .posts-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Dropdown styles */
+.posts .dropdown .form-select {
+  min-width: 150px;
+  transition: all 0.3s ease;
+}
+
+.posts .dropdown .form-select:hover {
+  border-color: #666;
+}
+
+.posts .dropdown .form-select:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  border-color: #80bdff;
+}
+
+/* Category title */
+.posts .category-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Memastikan tinggi card sama */
+.row-equal-height {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row-equal-height > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+
+.row-equal-height .post-entry-1 {
+  width: 100%;
+}

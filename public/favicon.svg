@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" width="512" height="512"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="512" height="512" rx="128" fill="url(#gradient)"></rect>
+  
+  <!-- Letter A -->
+  <path d="M256 80L432 432H80L256 80Z" fill="white"></path>
+  <path d="M256 160L384 432H128L256 160Z" fill="url(#gradient)"></path>
+  
+  <!-- Gradient definitions -->
+  <defs>
+    <linearGradient id="SvgjsLinearGradient1010" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" style="stop-color:#8B0000"></stop>
+      <stop offset="100%" style="stop-color:#FF0000"></stop>
+    </linearGradient>
+  </defs>
+</svg><style>@media (prefers-color-scheme: light) { :root { filter: none; } }
+@media (prefers-color-scheme: dark) { :root { filter: none; } }
+</style></svg>

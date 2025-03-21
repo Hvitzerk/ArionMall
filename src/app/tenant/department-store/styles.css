@@ -1,0 +1,241 @@
+.dept-store-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.dept-store-header {
+  margin-bottom: 50px;
+}
+
+.retail-header-container {
+  background-color: #ffffff;
+  padding: 60px 30px;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid #f0f0f0;
+  border-top: 1px solid #f0f0f0;
+}
+
+.retail-header-container::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80%;
+  height: 3px;
+  background: linear-gradient(to right, #e63946, #f1faee, #a8dadc, #457b9d, #1d3557);
+}
+
+.retail-header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.retail-overline {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: #457b9d;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.retail-title {
+  font-size: 46px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #1d3557;
+  margin-bottom: 15px;
+}
+
+.retail-separator {
+  width: 60px;
+  height: 3px;
+  background-color: #e63946;
+  margin-bottom: 20px;
+}
+
+.retail-subtitle {
+  font-size: 18px;
+  font-weight: 400;
+  color: #6c757d;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.retail-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.retail-tags span {
+  padding: 8px 16px;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #457b9d;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  border-left: 3px solid #e63946;
+}
+
+.retail-tags span:hover {
+  background-color: #e9ecef;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  color: #1d3557;
+}
+
+.dept-store-section {
+  margin-bottom: 50px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dept-store-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.section-header {
+  padding: 20px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+
+.section-header h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+}
+
+.floor-badge {
+  background: #212529;
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.store-details {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.store-image {
+  flex: 1;
+  min-width: 300px;
+  overflow: hidden;
+}
+
+.store-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.store-image img:hover {
+  transform: scale(1.05);
+}
+
+.store-info {
+  flex: 2;
+  padding: 30px;
+  min-width: 300px;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #495057;
+  margin-bottom: 25px;
+}
+
+.contact-hours {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 25px;
+}
+
+.contact, .hours {
+  min-width: 200px;
+}
+
+.contact h3, .hours h3, .products h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #343a40;
+}
+
+.contact p, .hours p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #6c757d;
+}
+
+.contact i, .hours i {
+  color: #212529;
+}
+
+.products {
+  margin-top: 20px;
+}
+
+.product-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.product-tag {
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  padding: 5px 15px;
+  border-radius: 20px;
+  color: #495057;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.product-tag:hover {
+  background: #212529;
+  color: #fff;
+  border-color: #212529;
+}
+
+@media (max-width: 768px) {
+  .store-details {
+    flex-direction: column;
+  }
+  
+  .store-image {
+    height: 250px;
+  }
+  
+  .contact-hours {
+    flex-direction: column;
+    gap: 15px;
+  }
+}

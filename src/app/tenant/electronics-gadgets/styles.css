@@ -1,0 +1,472 @@
+.electronics-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.electronics-header {
+  margin-bottom: 50px;
+}
+
+.luxury-header-container {
+  background-color: #fff;
+  border-radius: 0;
+  padding: 80px 40px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.05);
+  position: relative;
+  overflow: hidden;
+}
+
+.luxury-header-container::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  height: 200px;
+  background-color: #f8f8f8;
+  border-radius: 50%;
+  transform: translate(50%, 50%);
+  z-index: -1;
+}
+
+.luxury-header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.luxury-overline {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  color: #999;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.luxury-title {
+  font-size: 48px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  color: #222;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.luxury-separator {
+  width: 50px;
+  height: 1px;
+  background-color: #222;
+  margin-bottom: 25px;
+}
+
+.luxury-subtitle {
+  font-size: 18px;
+  font-weight: 300;
+  color: #666;
+  margin-bottom: 40px;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.luxury-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.luxury-tags span {
+  padding: 10px 25px;
+  background-color: transparent;
+  border: 1px solid #eee;
+  font-size: 13px;
+  color: #444;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.luxury-tags span:hover {
+  background-color: #222;
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  border-color: #222;
+}
+
+.floor-filter {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.floor-filter button {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  color: #495057;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.floor-filter button:hover {
+  background-color: #e9ecef;
+}
+
+.floor-filter button.active {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+.electronics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  gap: 30px;
+}
+
+.electronics-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #eaeaea;
+}
+
+.electronics-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-color: #007bff15;
+}
+
+.electronics-image {
+  position: relative;
+  height: 230px;
+  overflow: hidden;
+}
+
+.electronics-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.electronics-card:hover .electronics-image img {
+  transform: scale(1.05);
+}
+
+.location-badge {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.location-badge .floor,
+.location-badge .location {
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.electronics-content {
+  padding: 25px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.electronics-content h2 {
+  margin: 0 0 20px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #212529;
+  text-align: center;
+}
+
+.contact-hours {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.contact, .hours {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #6c757d;
+  font-size: 14px;
+}
+
+.contact i, .hours i {
+  color: #007bff;
+  font-size: 16px;
+}
+
+.description {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #495057;
+  margin-bottom: 20px;
+}
+
+.categories {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.categories h3, .highlights h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #343a40;
+  position: relative;
+  padding-left: 12px;
+}
+
+.categories h3:before, .highlights h3:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 4px;
+  height: 70%;
+  width: 3px;
+  background: #007bff;
+  border-radius: 2px;
+}
+
+.category-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.category-tag {
+  background: #f0f7ff;
+  border: 1px solid #cee4fd;
+  padding: 4px 10px;
+  border-radius: 20px;
+  color: #007bff;
+  font-size: 12px;
+  transition: all 0.2s ease;
+}
+
+.category-tag:hover {
+  background: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+.highlights {
+  margin-top: auto;
+  padding-top: 15px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.highlight-list {
+  padding-left: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.highlight-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 8px 12px;
+  background: #f8f9fa;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.highlight-item:hover {
+  transform: translateX(5px);
+  background: #f0f7ff;
+}
+
+.highlight-item i {
+  color: #007bff;
+  font-size: 16px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.highlight-item span {
+  font-size: 14px;
+  color: #495057;
+}
+
+.tech-placeholder {
+  height: 250px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #080b14;
+  color: white;
+}
+
+.tech-placeholder::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  z-index: 2;
+}
+
+.tech-placeholder-content {
+  text-align: center;
+  padding: 30px;
+  z-index: 1;
+  position: relative;
+}
+
+.tech-placeholder-icon {
+  margin-bottom: 15px;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 20px rgba(0, 198, 255, 0.3);
+  margin: 0 auto 20px;
+}
+
+.tech-placeholder-icon i {
+  font-size: 24px;
+  color: #00c6ff;
+}
+
+.tech-placeholder-name {
+  font-size: 22px;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+  color: white;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.tech-placeholder-floor {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+}
+
+.tech-placeholder-circuit {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.05;
+  background-image: 
+    linear-gradient(to right, rgba(0, 198, 255, 0.2) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 198, 255, 0.2) 1px, transparent 1px);
+  background-size: 30px 30px;
+}
+
+.tech-placeholder-dot-pattern {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  z-index: 0;
+}
+
+.tech-placeholder-dot-pattern.pattern-1 {
+  bottom: -70px;
+  right: -70px;
+  background: 
+    radial-gradient(circle, rgba(0, 198, 255, 0.4) 2px, transparent 2px) 0 0/15px 15px;
+}
+
+.tech-placeholder-dot-pattern.pattern-2 {
+  top: -70px;
+  left: -70px;
+  background: 
+    radial-gradient(circle, rgba(0, 114, 255, 0.4) 2px, transparent 2px) 0 0/10px 10px;
+}
+
+.tech-placeholder-glow {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0, 198, 255, 0.2) 0%, transparent 70%);
+  z-index: 0;
+}
+
+.tech-placeholder-glow.glow-1 {
+  bottom: -75px;
+  right: -75px;
+}
+
+.tech-placeholder-glow.glow-2 {
+  top: -75px;
+  left: -75px;
+  background: radial-gradient(circle, rgba(0, 114, 255, 0.15) 0%, transparent 70%);
+}
+
+@media (max-width: 992px) {
+  .electronics-grid {
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .electronics-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .electronics-image {
+    height: 220px;
+  }
+  
+  .contact-hours {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+  
+  .floor-filter {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .luxury-title {
+    font-size: 32px;
+  }
+  
+  .electronics-content h2 {
+    font-size: 20px;
+  }
+  
+  .location-badge {
+    flex-direction: column;
+    gap: 5px;
+  }
+}

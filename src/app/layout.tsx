@@ -8,15 +8,18 @@ import type { Metadata } from 'next';
 import { EB_Garamond } from 'next/font/google';
 
 import Header from '@/app/components/Header';
+import Footer from '@/app/components/Footer';
 
 import './variables.css';
 import './globals.css';
- 
+
 const ebGaramond = EB_Garamond({ subsets: ['latin'] }); // Pastikan nama variabel sesuai
 
 export const metadata: Metadata = {
-  title: 'Arion Mall', // Sesuaikan deng  an judul aplikasi Anda
-  description: 'ArionMall_UsulanWeb', // Sesuaikan dengan deskripsi aplikasi Anda
+  title: 'Arion Mall',
+  description: 'The Best One Stop Shopping Centre in East Jakarta',
+  icons: '/favicon.ico',
+  manifest: '/manifest.json'
 };
 
 export default function RootLayout({
@@ -26,9 +29,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/favicon-96x96.png" />
+      </head>
       <body className={ebGaramond.className}>
-        <Header />
-        {children}
+        {/* Tampilkan header dan footer secara kondisional */}
+        {!String(children).includes('/admin') && <Header />}
+        <main>
+          {children}
+        </main>
+        {!String(children).includes('/admin') && <Footer />}
       </body>
     </html>
   );

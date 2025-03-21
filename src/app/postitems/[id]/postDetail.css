@@ -1,0 +1,236 @@
+.post-detail-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.post-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.category-badge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: var(--color-primary);
+  color: white;
+  border-radius: 2rem;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.post-title {
+  font-size: 2.5rem;
+  color: var(--color-default);
+  margin: 1rem 0;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+.post-meta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  color: #6c757d;
+  font-size: 0.95rem;
+}
+
+.author-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.author-icon {
+  font-size: 1.5rem;
+  color: var(--color-primary);
+}
+
+.author-name {
+  font-weight: 600;
+}
+
+.post-date {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.post-content {
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.featured-image-container {
+  margin: -2rem -2rem 2rem -2rem;
+  overflow: hidden;
+  border-radius: 1rem 1rem 0 0;
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* Untuk aspect ratio 16:9 */
+  background-color: #f8f9fa;
+}
+
+.featured-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Mengubah dari cover ke contain */
+  background-color: #f8f9fa;
+}
+
+.post-description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #4a4a4a;
+  margin-bottom: 2rem;
+}
+
+.share-section {
+  border-top: 1px solid #eee;
+  padding-top: 2rem;
+  margin-top: 2rem;
+}
+
+.share-section h3 {
+  font-size: 1.2rem;
+  color: var(--color-default);
+  margin-bottom: 1rem;
+}
+
+.social-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.facebook {
+  background-color: #1877f2;
+}
+
+.twitter {
+  background-color: #000000;
+}
+
+.whatsapp {
+  background-color: #25d366;
+}
+
+.telegram {
+  background-color: #0088cc;
+}
+
+.navigation-buttons {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.back-to-posts {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.5rem;
+  background-color: var(--color-primary);
+  color: white;
+  border-radius: 2rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.back-to-posts:hover {
+  background-color: var(--color-primary-dark);
+}
+
+.error-container {
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.error-container h1 {
+  color: var(--color-default);
+  margin-bottom: 1.5rem;
+}
+
+.back-button {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: var(--color-primary);
+  color: white;
+  border-radius: 2rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: var(--color-primary-dark);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .post-title {
+    font-size: 2rem;
+  }
+
+  .post-meta {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .post-content {
+    padding: 1rem;
+  }
+
+  .featured-image-container {
+    margin: -1rem -1rem 1rem -1rem;
+  }
+
+  .post-description {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .post-title {
+    font-size: 1.5rem;
+  }
+
+  .category-badge {
+    font-size: 0.8rem;
+  }
+
+  .social-buttons {
+    justify-content: center;
+  }
+} 

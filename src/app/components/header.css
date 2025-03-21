@@ -1,41 +1,138 @@
 /*font*/
 @font-face {
-    font-family: 'Brush445';
-    src: url('/assets/fonts/Brush445.otf') format('opentype'); /* Path ke font */
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Brush445';
+  src: url('/assets/fonts/Brush445.otf') format('opentype'); /* Path ke font */
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* Gaya untuk teks logo */
 .logo-text {
-    font-family: 'Brush445', cursive; /* Gunakan font kustom */
-    font-size: 35px; /* Ukuran font */
-    color: #df0303; /* Warna teks */
-    letter-spacing: 1px; /* Spasi antar huruf */
+  font-family: 'Brush445', cursive; /* Gunakan font kustom */
+  font-size: 35px; /* Ukuran font */
+  color: #df0303; /* Warna teks */
+  letter-spacing: 1px; /* Spasi antar huruf */
+  margin: 0;
 }
 
 /* --------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
 .header {
-    height: 90px;
-    transition: all 0.5s;
-    z-index: 997;
-    background: #f2f2f2;
-  }
-  
-  .header.sticked {
-    height: 100px;
-  }
-  
-  .header .logo img {
-    max-height: 40px;
-    margin-right: 6px;
-  }
-  
-  .header .logo h1 {
-    font-size: 30px;
-    font-weight: 700;
-    /* color: var(--color-default);
+  height: 90px;
+  transition: all 0.5s;
+  z-index: 997;
+  background: #f2f2f2;
+}
+
+.header.sticked {
+  height: 100px;
+}
+
+.header .logo img {
+  max-height: 40px;
+  margin-right: 6px;
+}
+
+.header .logo h1 {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0;
+  /* color: var(--color-default);
     font-family: var(--font-primary); */
+}
+
+/* Social Media Links */
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-links a {
+  color: var(--color-default);
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.social-links a:hover {
+  color: #fff;
+  background: var(--color-primary);
+  transform: translateY(-2px);
+}
+
+/* Search Toggle */
+.search-toggle {
+  background: none;
+  border: none;
+  padding: 8px;
+  margin: 0 10px;
+  cursor: pointer;
+  color: var(--color-primary);
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.search-toggle:hover {
+  background: rgba(var(--color-primary-rgb), 0.1);
+  transform: scale(1.1);
+}
+
+.search-toggle:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(var(--color-primary-rgb), 0.2);
+}
+
+/* Mobile Nav Toggle */
+.mobile-nav-toggle {
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--color-default);
+  margin-left: 15px;
+  display: none;
+}
+
+@media (max-width: 1279px) {
+  .mobile-nav-toggle {
+    display: block;
   }
+
+  .social-links {
+    margin-right: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .social-links,
+  .social-links a {
+    display: none !important;
+  }
+  
+  .mobile-nav-toggle {
+    margin-left: 10px;
+  }
+
+  .search-toggle {
+    display: none;
+  }
+}
+
+/* Position relative untuk container */
+.position-relative {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

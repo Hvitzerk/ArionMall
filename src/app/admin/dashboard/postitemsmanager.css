@@ -1,0 +1,221 @@
+/* PostItemsManager Styles */
+
+.post-items-container {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.post-items-header {
+  padding: 16px 20px;
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+  color: white;
+  font-weight: 600;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.post-items-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.post-items-table th {
+  background-color: #f3f4f6;
+  font-weight: 600;
+  text-align: left;
+  color: #374151;
+  padding: 10px 16px;
+  border-bottom: 2px solid #e5e7eb;
+  font-size: 0.875rem;
+}
+
+.post-items-table td {
+  padding: 10px 16px;
+  vertical-align: middle;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.post-items-table tr:hover td {
+  background-color: #f9fafb;
+}
+
+.post-image-preview {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid #e5e7eb;
+}
+
+.post-items-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.edit-button, .delete-button {
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.edit-button {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.edit-button:hover {
+  background-color: #2563eb;
+  box-shadow: 0 2px 4px rgba(59, 130, 246, 0.3);
+}
+
+.delete-button {
+  background-color: #ef4444;
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: #dc2626;
+  box-shadow: 0 2px 4px rgba(239, 68, 68, 0.3);
+}
+
+.post-items-form {
+  padding: 16px;
+  background-color: #f9fafb;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.post-items-form input[type="text"],
+.post-items-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  transition: border-color 0.2s;
+}
+
+.post-items-form input[type="text"]:focus,
+.post-items-form textarea:focus {
+  border-color: #6366f1;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+.post-items-form button {
+  padding: 8px 16px;
+  background-color: #6366f1;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.post-items-form button:hover {
+  background-color: #4f46e5;
+  box-shadow: 0 2px 4px rgba(99, 102, 241, 0.3);
+}
+
+.post-items-form button:disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #374151;
+  font-size: 0.875rem;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.checkbox-container input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #6366f1;
+}
+
+/* Inline edit form styles */
+.inline-edit-row {
+  background-color: #f3f4f6;
+  transition: all 0.3s ease;
+}
+
+.inline-edit-row td {
+  padding: 12px 16px;
+}
+
+.inline-edit-row input[type="text"],
+.inline-edit-row textarea {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 0.875rem;
+}
+
+.inline-form-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.save-button {
+  background-color: #10b981;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.save-button:hover {
+  background-color: #059669;
+}
+
+.cancel-button {
+  background-color: #9ca3af;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.cancel-button:hover {
+  background-color: #6b7280;
+}
+
+/* Loading and Error states */
+.loading-indicator, .error-message {
+  text-align: center;
+  padding: 2rem;
+  border-radius: 6px;
+}
+
+.loading-indicator {
+  background-color: #f3f4f6;
+  color: #4b5563;
+}
+
+.error-message {
+  background-color: #fee2e2;
+  color: #b91c1c;
+  border: 1px solid #fecaca;
+}
